@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Tema: Sumi Autumn (Minimalista / Flat)
+   Otimizado para 1280x800 | Fonte: Inter | Ícones: Papirus-Dark
+   ========================================================================== */
+
+* {
+    bg:          #161618;
+    bg-alt:      #202024;
+    fg:          #ECECEC;
+    fg-muted:    #7E828A;
+    accent:      #D9362E;
+    border-col:  #2C2C32;
+
+    background-color: transparent;
+    text-color:       @fg;
+    font:             "Inter 11";
+    margin:           0px;
+    padding:          0px;
+}
+
+window {
+    width:            500px;
+    background-color: @bg;
+    border:           1px solid;
+    border-color:     @border-col;
+    border-radius:    8px;
+    padding:          16px;
+    location:         center;
+    anchor:           center;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing:  14px;
+}
+
+/* Barra de busca */
+inputbar {
+    background-color: @bg-alt;
+    border-radius:    6px;
+    padding:          10px 14px;
+    spacing:          10px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color: @accent;
+    font:       "Inter Bold 11";
+}
+
+entry {
+    placeholder:       "Buscar aplicativo...";
+    placeholder-color: @fg-muted;
+    cursor:            text;
+}
+
+/* Lista de resultados */
+listview {
+    lines:        7;
+    columns:      1;
+    fixed-height: false;
+    scrollbar:    false;
+    spacing:      4px;
+}
+
+element {
+    padding:       8px 12px;
+    spacing:       12px;
+    border-radius: 6px;
+    orientation:   horizontal;
+    children:      [ element-icon, element-text ];
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color:       #FFFFFF;
+}
+
+element-icon {
+    size:             22px;
+    vertical-align:   0.5;
+}
+
+element-text {
+    vertical-align:   0.5;
+    text-color:       inherit;
+}
