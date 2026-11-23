@@ -1,4 +1,4 @@
-# Sumi Autumn — Rofi Theme
+# Sumi Autumn
 
 Tema minimalista e *flat* para o [Rofi](https://github.com/davatorium/rofi), inspirado na estética *sumi-e* que combina fundo em preto nanquim profundo, superfície carvão, tipografia limpa e destaque cirúrgico em vermelho alaranjado.
 
